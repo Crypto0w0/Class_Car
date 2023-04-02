@@ -54,31 +54,31 @@ public:
     }
 };
 
-class Plane : public Wehicle{
+class Plane : public Vehicle{
     virtual void PrintFuelC(){
         cout << "Plane's fuel consumption: " << GetFuelC();
     }
 };
 
-class Ship : public Wehicle{
+class Ship : public Vehicle{
     virtual void PrintFuelC(){
         cout << "Ship's fuel consumption: " << GetFuelC();
     }
 };
 
-class Truck : public Wehicle{
+class Truck : public Vehicle{
     virtual void PrintFuelC(){
         cout << "Truck's fuel consumption: " << GetFuelC();
     }
 };
 
-class Bicycle : public Wehicle{
+class Bicycle : public Vehicle{
     virtual void PrintFuelC(){
         cout << "Bicycle's fuel consumption: " << GetFuelC();
     }
 };
 
-class Auto : public Wehicle{
+class Auto : public Vehicle{
     virtual void PrintFuelC(){
         cout << "Auto's fuel consumption: " << GetFuelC();
     }
