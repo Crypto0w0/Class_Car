@@ -34,15 +34,15 @@ public:
 
 //2
 
-class Wehicle{
+class Vehicle{
     int UsedPetrol;
     int Distanse;
 public:
-    Wehicle(){
+    Vehicle(){
         UsedPetrol = 0;
         Distanse = 0;
     }
-    Wehicle(int us, int d){
+    Vehicle(int us, int d){
         UsedPetrol = us;
         Distanse = d;
     }
@@ -50,7 +50,7 @@ public:
         return UsedPetrol / Distanse * 100;
     }
     virtual void PrintFuelC(){
-        cout << "Wehicle's fuel consumption: " << GetFuelC();
+        cout << "Vehicle's fuel consumption: " << GetFuelC();
     }
 };
 
@@ -84,14 +84,14 @@ class Auto : public Wehicle{
     }
 };
 
-Wehicle* Menu(){
+Vehicle* Menu(){
     string w;
     int us;
     int d;
     cout << "What wehicle do you want to create?\n";
     cout << "You can pick: plane, truck, ship, bicycle, auto\n";
     cin >> w;
-    Wehicle* wh = nullptr;
+    Vehicle* wh = nullptr;
     if (w == "plane"){
         wh = new Plane;
     }
@@ -118,5 +118,5 @@ int main() {
     Car c;
     c.D_Open();
     
-    Wehicle* wehicle = Menu();
+    Vehicle* wehicle = Menu();
 }
